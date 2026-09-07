@@ -58,4 +58,4 @@ Kontribusi sangat diterima! Silakan baca [CONTRIBUTING](CONTRIBUTING.md) untuk p
 
 ## Lisensi
 
-[MIT](LICENSE) Â© [Celieln](https://github.com/Celieln)
+[MIT](LICENSE) (c) [Celieln](https://github.com/Celieln)
