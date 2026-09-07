@@ -12,49 +12,60 @@ Website hotel - pemesanan kamar online dengan tampilan premium.
 
 ![Home](assets/screenshots/home.png)
 
-## Fitur
-
-- Halaman beranda premium
-- Halaman kamar (kamar.php)
-- Reservasi online (reservasi.php)
-- Galeri fasilitas
-- Responsive design
-
 ## Teknologi
 
-- **PHP** - Bahasa pemrograman server-side
-- **MySQL / JSON** - Penyimpanan data
-- **Bootstrap 5** - Styling & responsive
-- **HTML5 + CSS3 + JavaScript** - Front-end
+**Backend**
+- PHP 8.x - server-side scripting
+- Reservation module (kamar, booking)
+- API endpoint untuk data kamar & reservasi
+- JSON-file based data storage
+
+**Frontend**
+- HTML5, CSS3, JavaScript (ES6+)
+- Bootstrap 5 responsive
+- Fetch API untuk data dinamis
+- Tampilan premium & elegan
+
+**Database**
+- JSON file storage - portable
+
+**Tooling & DevOps**
+- Git & GitHub
+- Laragon/WAMP
+
+## Arsitektur
+
+- **Front-end first** - hanya berisi tampilan depan (public UI)
+- Layout modular (folder includes, assets, data)
+- Keamanan: input sanitization, validation, dan prepared query
+- Data berbasis file (JSON) - mudah di-deploy tanpa database server
 
 ## Quick Start
 
 Prasyarat: [Laragon](https://laragon.org) / [XAMPP](https://www.apachefriends.org)
 
-1. Clone repository ke folder laragon/www/ atau htdocs/:
+1. Clone repository:
 
-   `ash
+   ```bash
    git clone https://github.com/Celieln/portofolio-hotel-web.git
-   `
+   ```
 
-2. Jalankan server Apache. Buka http://localhost/portofolio-hotel-web.
-
-3. Selesai! Website siap digunakan.
+2. Letakkan folder di `laragon/www/` atau `htdocs/`.
+3. Buka `http://localhost/portofolio-hotel-web`.
 
 ## Struktur Proyek
 
-`
-hotel-web/
-  assets/          # CSS, JS, gambar, screenshot
-  includes/        # Komponen yang di-include (header, footer, dll)
-  data/            # File data (JSON)
-  index.php        # Halaman utama
-  *.php            # Halaman lainnya
-`
+```
+portofolio-hotel-web/
+  assets/      # CSS, JS, gambar, screenshot
+  includes/    # Komponen header, footer, dll
+  data/        # File data (JSON)
+  *.php        # Halaman tampilan depan
+```
 
 ## Kontribusi
 
-Kontribusi sangat diterima! Silakan baca [CONTRIBUTING](CONTRIBUTING.md) untuk panduan, atau buka [Issues](https://github.com/Celieln/portofolio-hotel-web/issues) untuk melaporkan bug / request fitur.
+Kontribusi sangat diterima! Baca [CONTRIBUTING](CONTRIBUTING.md) dan buka [Issues](https://github.com/Celieln/portofolio-hotel-web/issues).
 
 ## Lisensi
 
